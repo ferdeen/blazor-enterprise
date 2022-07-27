@@ -45,6 +45,8 @@ namespace BethanysPieShopHRM.UI.Services
 
             //requestMessage.Headers.Add("x-custom", "secretCode");
 
+            //await _client.SendAsync(requestMessage);
+
             await _client.PostJsonAsync("jobs", newJob);
         }
 
